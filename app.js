@@ -39,7 +39,7 @@ logoutButton.addEventListener('click', () => {
 firebase.auth().onAuthStateChanged((user) => {
     if (user) {
         // El usuario ha iniciado sesión
-        //updateUI(user);
+        updateUI(user);
 
         // El usuario ha iniciado sesión
         console.log("Usuario autenticado:", user.uid);
