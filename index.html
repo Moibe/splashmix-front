@@ -6,32 +6,34 @@
     <title>Heroes</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="index.css">   
+    
 </head>
 <body>
     <section id="section1" class="bg-primary text-white">
         <div class="container"> 
             <div class="row align-items-center">
-                <div class="col-md-6">
-                    <div class="row align-items-center"> 
-                        <div class="contenedor-s1">
-                                            
-                                <div id="imagen1" class="card original position_original animated"></div>
-                                <div id="imagen2" class="card creacion position_creation animated"></div>
-                            
+                <div class="col-md-6">                     
+                        <div class="contenedor-s1" style="display: flex;">                                            
+                                <div class="card original animated"></div>
+                                <div class="card creacion animated"></div>                            
                         </div>
-                    </div>
+                    
                 </div>                
                 <div class="col-md-6">                  
                     <h1>splashmix.ink</h1>
                     <p>
-                        Transforma instantáneamente cualquier fotografía con el poder de la Inteligencia Artificial. 
+                        1:Transforma instantáneamente cualquier fotografía con el poder de la Inteligencia Artificial. 
                         Splashmix detecta los rasgos de la foto original y los transforma en una imagen totalmente nueva de la misma persona. 
-                </div>
+                        <div class="container">
+                            <button id="google-sign-in">Sign In with Google</button>
+                            <button id="logout-button" style="display: none;">Log Out</button>
+                            <div id="message"></div>
+                        </div>
+                    </div>
                 
             </div>              
         </div>
-    </section> 
-    
+    </section>     
     <section id="section2" class="bg-primary text-white">
         
         <div class="container"> 
@@ -61,24 +63,35 @@
         <div class="container"> 
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <div class="row align-items-center"> 
-                       
-                                            
+                    <div class="row align-items-center">                                            
                         <div class="contenedor-s2">
                             <img src="menu.png" class="imagen">                  
-                        </div>
-                            
-                       
+                        </div>   
                     </div>
                 </div>                
                 <div class="col-md-6">                  
-                    <!-- <h1>splashmix.ink</h1> -->
                     <p>
                         Elige entre una gran variedad de opciones que ya fueron preentrenadas en la inteligencia artificial,
                         para poder crear tu imagen instantáneamente. 
                 </div>
                 
             </div>              
+        </div>
+    </section>
+
+    <section id="section4" class="bg-primary text-white">
+        <div style="display: flex; flex-direction: column;">
+            <h2>¡Prueba con diferentes estilos !</h2>
+            <div style="display: flex;">
+                <div id="izquierda" style="display: flex;">
+                    <div class="card modelo position_original animated"></div>                        
+                </div>
+                <div id="derecha" style="display: flex;">
+                    <div class="card estilo1 position_original animated"></div>
+                    <div class="card estilo2 position_creation animated"></div>
+                    <div class="card estilo3 position_creation animated"></div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -109,5 +122,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="index.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore-compat.js"></script>
+    <script src="config.js"></script> 
+    <script type="module" src="app.js"></script>
 </body>
 </html>
