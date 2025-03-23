@@ -1,12 +1,8 @@
 :root {
     --color1: rgb(0, 231, 255);
     --color2: rgb(255, 0, 231);
-    --back: url('images/CaptainMarvel-1741210153.jpg');
-    --charizardfront: url('images/LazyTown.png');
-    --pikafront: url("images/Aquaman'sMera-1740943688.jpg");
-    --eeveefront: url('images/CaptainMarvel-1741210153.jpg');
-    --mewtwofront: url('images/CaptainMarvel-1741210153.jpg');
-    --genericofront: url('images/ariancita.jpg');
+    --imagen_original: url("");
+    --imagen_creacion: url("");
   }
 
 section {
@@ -33,20 +29,6 @@ div{
 .contenedor-s2{
   border: 0px solid rgb(127, 108, 235);
   position: relative;
-}
-
-.original { 
-  position: absolute;
-  top: 10%;
-  left: 0%;
-  z-index: 1;
-}
-
-.creation {
-  position: relative;
-  top: 0%; 
-  left: 30%; 
-  z-index: 0;
 }
 
 .imagen{
@@ -97,37 +79,28 @@ div{
   box-shadow: -20px -20px 30px -25px var(--color1), 20px 20px 30px -25px var(--color2), -7px -7px 10px -5px var(--color1), 7px 7px 10px -5px var(--color2), 0 0 13px 4px rgba(255, 255, 255, 0.3), 0 55px 35px -20px rgba(0, 0, 0, 0.5);
 }
 
-.card.charizard {
-  --color1: var(--charizard1);
-  --color2: var(--charizard2);
-  --front: var(--charizardfront);
-}
-
-.card.pika {
-  --color1: var(--pika1);
-  --color2: var(--pika2);
-  --front: var(--pikafront);
-}
-
-.card.mewtwo {
-  --color1: var(--mewtwo1);
-  --color2: var(--mewtwo2);
-  --front: var(--mewtwofront);
-}
-
-.card.generico {
-  --color1: var(--mewtwo1);
-  --color2: var(--mewtwo2);
-  --front: var(--genericofront);
-}
-
-.card.eevee {
+.card.original {
   --color1: #ec9bb6;
   --color2: #ccac6f;
-  --color3: #69e4a5;
-  --color4: #8ec5d6;
-  --color5: #b98cce;
-  --front: var(--eeveefront);
+  --front: var(--imagen_original);
+}
+
+.card.creacion {
+  --front: var(--imagen_creacion);
+}
+
+.position_original { 
+  position: absolute;
+  top: 10%;
+  left: 0%;
+  z-index: 1;
+}
+
+.position_creation {
+  position: relative;
+  top: 0%; 
+  left: 30%; 
+  z-index: 0;
 }
 
 .card:before,
@@ -418,22 +391,6 @@ div{
   vertical-align: middle;
   font-size: 6vh;
 }
-
-html,
-/* body {
-  height: 100%;
-  background-color: #333844;
-  padding: 0;
-  z-index: 1;
-  transform: translate3d(0, 0, 0.1px);
-}
-
-body {
-  color: white;
-  background-color: #333844;
-  font-family: "Heebo", sans-serif;
-  text-align: center;
-} */
 
 h1 {
   display: block;

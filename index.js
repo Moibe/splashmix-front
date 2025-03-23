@@ -63,3 +63,8 @@ $cards
       $card.addClass("animated");
     },2500);
   });
+
+  let numeroImagen = Math.floor(Math.random() * 29) + 1; 
+  // #Esto da un número entre el 1 y el 29.
+  document.documentElement.style.setProperty('--imagen_original', `url('images/foto${numeroImagen}a.jpg')`);
+  document.documentElement.style.setProperty('--imagen_creacion', `url('images/foto${numeroImagen}b.jpg')`);
