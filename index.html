@@ -9,6 +9,38 @@
     
 </head>
 <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-2">
+        <div class="container">
+            <a class="navbar-brand py-0" href="#">splashmix.ink 🐙</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active py-1" aria-current="page" href="#section1">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link py-1" href="#section2">Características</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link py-1" href="#section3">Preentrenados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link py-1" href="#section4">Estilos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link py-1" href="#section5">Regístrate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="btn btn-primary boton_firebase" style="background-color: #e938b4; color: rgb(255, 255, 255); border: none; margin-left: 10px;">Inicia Sesión 💎</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <section id="section1" class="bg-primary text-white">
         <div class="container"> 
             <div class="row align-items-center">
@@ -16,21 +48,19 @@
                         <div class="contenedor-s1" style="display: flex;">                                            
                                 <div class="card original animated"></div>
                                 <div class="card creacion animated"></div>                            
-                        </div>
-                    
+                        </div>                    
                 </div>                
                 <div class="col-md-6">                  
-                    <h1>splashmix.ink</h1>
+                    <h1>splashmix.ink 🐙</h1>
                     <p>
-                        4:Transforma instantáneamente cualquier fotografía con el poder de la Inteligencia Artificial. 
-                        Splashmix detecta los rasgos de la foto original y los transforma en una imagen totalmente nueva de la misma persona. 
-                        <div class="container">
-                            <button id="google-sign-in">Sign In with Google</button>
-                            <button id="logout-button" style="display: none;">Log Out</button>
-                            <div id="message"></div>
-                        </div>
-                    </div>
-                
+                        Transforma instantáneamente cualquier fotografía con el poder de la Inteligencia Artificial. 
+                        Splashmix detecta los rasgos de la foto original y los transforma en una imagen totalmente nueva de la misma persona.
+                    </div>                
+            </div>
+            <div class="container d-flex justify-content-center align-items-center" style="flex-direction: column;">
+                <p id="message" class="mensaje_firebase text-white mb-2">¡Pruébalo con tu foto ya mismo!</p>
+                <button id="google-sign-in" class="boton_firebase">Conecta con Google</button>
+                <button id="logout-button" class="button_test">Desloguea solo test</button>
             </div>              
         </div>
     </section>     
@@ -75,7 +105,11 @@
                         para poder crear tu imagen instantáneamente. 
                 </div>
                 
-            </div>              
+            </div> 
+            <div class="container d-flex justify-content-center align-items-center" style="flex-direction: column;">
+                <p id="message" class="text-white mb-2">¡Pruébalo con tu foto ya mismo!</p>
+                <button id="google-sign-in" class="boton_firebase">Conecta con Google</button>
+            </div>               
         </div>
     </section>
 
@@ -95,7 +129,75 @@
         </div>
     </section>
 
-    <section id="section5" class="bg-light text-black">
+    <section id="section6" class="bg-primary text-white">
+        <div class="container">             
+            <div class="container d-flex justify-content-center align-items-center" style="flex-direction: column;">
+                <p id="message" class="text-white mb-2">¡Pruébalo con tu foto ya mismo!</p>
+                <button id="google-sign-in" class="boton_firebase">Conecta con Google</button>
+            </div>             
+        </div>
+    </section>
+
+    <section class="bg-primary text-white">
+        <div class="container">
+            <h2 class="text-center mb-4">Precios</h2>
+            <div class="row">
+                <div class="col-md-4 mb-2">
+                    <div class="card animated">
+                        <div class="card-header text-white py-3 text-center" style="background-color: navy;">
+                            <h4 class="my-0 fw-normal">Básico</h4>
+                        </div>
+                        <div class="card-body bg-white">
+                            <!-- <h1 class="card-title pricing-card-title">$10 <small class="text-muted">/ mes</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Característica 1</li>
+                                <li>Característica 2</li>
+                                <li>Característica 3</li>
+                            </ul> -->
+                            <!-- <button type="button" class="w-100 btn btn-lg btn-primary">Comenzar</button> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <div class="card animated">
+                        <div class="card-header text-white py-3 text-center" style="background-color: navy;">
+                            <h4 class="my-0 fw-normal">Estándar</h4>
+                        </div>
+                        <div class="card-body bg-white">
+                            <!-- <h1 class="card-title pricing-card-title">$25 <small class="text-muted">/ mes</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Característica 1</li>
+                                <li>Característica 2</li>
+                                <li>Característica 3</li>
+                                <li>Característica 4</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-success">Comenzar</button> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <div class="card animated">
+                        <div class="card-header text-white py-3 text-center" style="background-color: navy;">
+                            <h4 class="my-0 fw-normal">Premium</h4>
+                        </div>
+                        <div class="card-body bg-white">
+                            <!-- <h1 class="card-title pricing-card-title">$40 <small class="text-muted">/ mes</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Característica 1</li>
+                                <li>Característica 2</li>
+                                <li>Característica 3</li>
+                                <li>Característica 4</li>
+                                <li>Característica 5</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-info">Comenzar</button> --> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section8" class="bg-light text-black" style="display: none;">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-6">
@@ -126,6 +228,6 @@
     <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-auth-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore-compat.js"></script>
     <script src="config.js"></script> 
-    <script type="module" src="app.js"></script>
+    <script type="module" src="auth.js"></script>
 </body>
 </html>
