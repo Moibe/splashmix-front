@@ -81,5 +81,5 @@ function updateUI(user) {
 
 function redirige(){
     // Redirigir a hola.html
-    window.location.href = "hola.html";
+    window.location.href = "https://app.splashmix.ink";
 }
