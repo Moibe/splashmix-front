@@ -14,7 +14,7 @@ button.addEventListener('click', () => {
         .then((result) => {
             const user = result.user;
             updateUI(user);
-            redirige();            
+            redirige(user);            
         }).catch((error) => {
             console.log(`Error al iniciar sesión: ${error.message}`);
         });
@@ -79,7 +79,13 @@ function updateUI(user) {
     }
 }
 
-function redirige(){
-    // Redirigir a hola.html
-    window.location.href = "https://app.splashmix.ink";
-}
+function redirige(user) {
+    user.getIdToken().then((authToken) => {
+      // Redirigir a app.splashmix.ink con el token como parámetro
+      window.location.href = `http://127.0.0.1:7800?authToken=${authToken}`;
+    }).catch((error) => {
+      console.log(`Error al obtener el token: ${error.message}`);
+      // Manejar el error al obtener el token (por ejemplo, redirigir sin token)
+      window.location.href = "https://app.splashmix.ink";
+    });
+  }
