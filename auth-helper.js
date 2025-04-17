@@ -1,5 +1,12 @@
 // In splashmix.ink/auth-helper.html
 console.log("Entré en authhelper.... ")
+
+//Conexión con Firebase
+firebase.initializeApp(firebaseConfig);
+const provider = new firebase.auth.GoogleAuthProvider();
+
+
+
 firebase.auth().onAuthStateChanged(function(user) {
     window.addEventListener('message', function(event) {
       if (event.origin === 'https://app.splashmix.ink' && event.data === 'auth-check-request') {

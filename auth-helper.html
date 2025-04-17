@@ -6,35 +6,10 @@
     <title>Firebase Auth Helper</title>
     <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-auth-compat.js"></script>
-    <script>
-        // Your Firebase configuration (same as in your main app)
-        const firebaseConfig = {
-            apiKey: "TU_API_KEY",
-            authDomain: "TU_AUTH_DOMAIN",
-            // ... other config values
-        };
-
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-        const auth = firebase.auth();
-
-        document.addEventListener('DOMContentLoaded', () => {
-            window.addEventListener('message', function(event) {
-                if (event.origin === 'https://app.splashmix.ink' && event.data === 'auth-check-request') {
-                    auth.currentUser.getIdToken().then(function(token) {
-                        window.parent.postMessage({ type: 'auth-token', token: token }, 'https://app.splashmix.ink');
-                    }).catch(function(error) {
-                        window.parent.postMessage({ type: 'auth-error', error: error.message }, 'https://app.splashmix.ink');
-                    });
-                }
-            }, false);
-
-            // Send a handshake request to the parent window when loaded
-            window.parent.postMessage('auth-helper-loaded', 'https://app.splashmix.ink');
-        });
-    </script>
+    
 </head>
 <body>
     <p style="display: none;">This page helps with Firebase authentication.</p>
+    <script type="module" src="auth-helper.js"></script>
 </body>
 </html>
