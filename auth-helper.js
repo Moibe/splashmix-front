@@ -1,10 +1,9 @@
 // In splashmix.ink/auth-helper.html
-console.log("Entré en authhelper.... ")
+console.log("Entré en authhelper.... ", user)
 
 //Conexión con Firebase
 firebase.initializeApp(firebaseConfig);
 const provider = new firebase.auth.GoogleAuthProvider();
-
 
 
 firebase.auth().onAuthStateChanged(function(user) {
