@@ -25,6 +25,16 @@ firebase.auth().onAuthStateChanged(function(user) {
         }
       }
     }, false);
+
+    // Send a handshake request to the parent window when loaded
+    window.parent.postMessage('auth-helper-loaded', 'https://app.splashmix.ink');
+
+    // Register Service Worker (optional, but showing where it would go)
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw-main.js')
+            .then(registration => console.log('Service Worker registered for main:', registration))
+            .catch(error => console.error('Service Worker registration failed for main:', error));
+    }
   });
   
   // Send a handshake request to the parent window when loaded
