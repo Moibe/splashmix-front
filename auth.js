@@ -82,7 +82,7 @@ function updateUI(user) {
 function redirige(user) {
     user.getIdToken().then((authToken) => {
       // Redirigir a app.splashmix.ink con el token como parámetro
-      window.location.href = `http://127.0.0.1:7800?authToken=${authToken}`;
+      window.location.href = `http://app.splashmix.ink?authToken=${authToken}`;
     }).catch((error) => {
       console.log(`Error al obtener el token: ${error.message}`);
       // Manejar el error al obtener el token (por ejemplo, redirigir sin token)
