@@ -1,5 +1,5 @@
 // In splashmix.ink/auth-helper.html
-console.log("Entré en authhelper.... ", user)
+console.log("Entré en authhelper.... ")
 
 //Conexión con Firebase
 firebase.initializeApp(firebaseConfig);
@@ -38,3 +38,4 @@ firebase.auth().onAuthStateChanged(function(user) {
   
   // Send a handshake request to the parent window when loaded
   window.parent.postMessage('auth-helper-loaded', 'https://app.splashmix.ink');
+  console.log("Mensaje handshake enviado...")
