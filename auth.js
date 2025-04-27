@@ -86,6 +86,6 @@ function redirige(user) {
     }).catch((error) => {
       console.log(`Error al obtener el token: ${error.message}`);
       // Manejar el error al obtener el token (por ejemplo, redirigir sin token)
-      window.location.href = "https://app.splashmix.ink";
+      window.location.href = "https://app.splashmix.ink/login";
     });
   }
