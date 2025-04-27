@@ -540,3 +540,25 @@ button_test {
   cursor: pointer;
   margin: 10px;
 }
+
+.boton_firebase {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #4285F4; /* azul Google */
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: inherit;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* sombra ligera */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.boton_firebase:hover {
+  background-color: #357ae8; /* azul más oscuro */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* sombra más intensa al hover */
+  transform: translateY(-2px); /* pequeño levantamiento */
+}
