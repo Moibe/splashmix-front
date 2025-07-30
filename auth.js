@@ -47,11 +47,7 @@ firebase.auth().onAuthStateChanged((user) => {
 
 // Función para actualizar la interfaz de usuario
 function updateUI(user) {
-    if (user) {
-        console.log("updateUI, actualizando...")
-        // messageDiv.textContent = ``;
-        // googleSignInButton.innerText = 
-        
+    if (user) {        
         for (const message of messageDivs) {
             message.innerText = "";
           }
@@ -60,11 +56,6 @@ function updateUI(user) {
         for (const button of googleSignInButtons) {
             button.innerText = "Ir a la APP 👉🏻";
           }
-        
-        // logoutButton.style.display = 'block';
-
-        // Muestra un mensaje de bienvenida
-        // messageDiv.textContent = `Bienvenido, ${user.displayName}!`;
        
     } else {
         // Muestra el botón de inicio de sesión y oculta el de cierre de sesión

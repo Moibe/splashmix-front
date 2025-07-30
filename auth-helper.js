@@ -1,5 +1,4 @@
 // In splashmix.ink/auth-helper.html
-console.log("Entré en authhelper.... ")
 
 //Conexión con Firebase
 firebase.initializeApp(firebaseConfig);
@@ -9,17 +8,14 @@ const provider = new firebase.auth.GoogleAuthProvider();
 firebase.auth().onAuthStateChanged(function(user) {
     window.addEventListener('message', function(event) {
       if (event.origin === 'https://app.splashmix.ink' && event.data === 'auth-check-request') {
-        console.log("Entré al primer IF.")
+        
         if (user) {
-          user.getIdToken().then(function(token) {
-            console.log("Entré al primer IF anidado...")
+          user.getIdToken().then(function(token) {            
             window.parent.postMessage({ type: 'auth-token', token: token }, 'https://app.splashmix.ink');
           }).catch(function(error) {
-            console.log("Entré al catch...")
             window.parent.postMessage({ type: 'auth-error', error: error.message }, 'https://app.splashmix.ink');
           });
-        } else {
-          console.log("Entré al else...")
+        } else {          
           window.parent.postMessage({ type: 'auth-status', authenticated: false }, 'https://app.splashmix.ink');
         }
       }
@@ -31,7 +27,7 @@ firebase.auth().onAuthStateChanged(function(user) {
     // Register Service Worker (optional, but showing where it would go)
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('/sw-main.js')
-            .then(registration => console.log('Service Worker registered for main:', registration))
+            .then(registration => console.log('Service Worker registered for main 182:', registration))
             .catch(error => console.error('Service Worker registration failed for main:', error));
     }
   });
