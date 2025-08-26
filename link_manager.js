@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // 5. Actualiza el enlace 'splashmix.ink 🐙' si tiene la clase correcta
-    const splashmixLink = document.querySelector('boton_navbar');
+    const splashmixLink = document.querySelector('.boton_navbar');
     if (splashmixLink) {
         splashmixLink.href = buyUrl;
     }
