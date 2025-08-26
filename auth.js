@@ -22,17 +22,17 @@ button.addEventListener('click', () => {
 });
 
 //Listener para el botón de cierre de sesión
-logoutButton.addEventListener('click', () => {
-    firebase.auth().signOut()
-        .then(() => {
-            // El usuario ha cerrado sesión correctamente
-            console.log('Sesión cerrada.');
-            updateUI(null);
-        }).catch((error) => {
-            // Ocurrió un error
-           console.log(`Error al cerrar sesión: ${error.message}`);
-        });
-});
+// logoutButton.addEventListener('click', () => {
+//     firebase.auth().signOut()
+//         .then(() => {
+//             // El usuario ha cerrado sesión correctamente
+//             console.log('Sesión cerrada.');
+//             updateUI(null);
+//         }).catch((error) => {
+//             // Ocurrió un error
+//            console.log(`Error al cerrar sesión: ${error.message}`);
+//         });
+// });
 
 // Listener para detectar el estado de autenticación
 firebase.auth().onAuthStateChanged((user) => {
