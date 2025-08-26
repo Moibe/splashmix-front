@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 3. Define la URL completa con el query parameter
     const fullAppUrl = `${appBaseUrl}?reload=true`;
-    const buyUrl = `${appBaseUrl}/buy`;
+    //const buyUrl = `${appBaseUrl}/buy`;
 
     // 4. Actualiza los enlaces del 'Ir a la APP' usando la clase para seleccionar a todos
     const appButtons = document.querySelectorAll('.boton_principal');
@@ -25,6 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // 5. Actualiza el enlace 'splashmix.ink 🐙' si tiene la clase correcta
     const splashmixLink = document.querySelector('.boton_navbar');
     if (splashmixLink) {
-        splashmixLink.href = buyUrl;
+        splashmixLink.href = fullAppUrl;
     }
 });
