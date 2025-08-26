@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // 3. Define la URL completa con el query parameter
-    const fullAppUrl = `${appBaseUrl}?reload=true`;
+    const fullAppUrl = `${appBaseUrl}/login`;
     //const buyUrl = `${appBaseUrl}/buy`;
 
     // 4. Actualiza los enlaces del 'Ir a la APP' usando la clase para seleccionar a todos
