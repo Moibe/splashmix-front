@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // 5. Actualiza el enlace 'splashmix.ink 🐙' si tiene la clase correcta
-    const splashmixLink = document.querySelector('.navbar-brand');
+    const splashmixLink = document.querySelector('#google-sign-in');
     if (splashmixLink) {
         splashmixLink.href = buyUrl;
     }
