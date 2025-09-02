@@ -1,0 +1,222 @@
+body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f8f8;
+            padding-top: 50px; /* Espacio para el navbar fijo si lo tienes */
+        }
+        .faq-header {
+            background-color: #4285F4; /* Azul de Google */
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .faq-header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .faq-section {
+            margin-bottom: 50px;
+        }
+        .faq-section h2 {
+            font-size: 2em;
+            color: #34495e;
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .faq-item {
+            background-color: #fff;
+            padding: 25px 30px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        }
+        .faq-item h3 {
+            color: #007bff; /* Color azul para las preguntas */
+            font-size: 1.4em;
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        .faq-section h4{
+            text-align: center;
+        }
+        .faq-item p {
+            margin-bottom: 10px;
+        }
+        .faq-item ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+        .faq-item ul li {
+            margin-bottom: 5px;
+        }
+        .faq-item img {
+            max-width: 100%; /* Asegura que las imágenes sean responsivas */
+            height: auto;
+            display: block; /* Centra la imagen */
+            margin: 15px auto; /* Margen superior/inferior para la imagen */
+            border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0,0,0,.1);
+        }
+        .faq-item a {
+            color: #007bff; /* Color de enlace azul de Bootstrap */
+            text-decoration: none;
+        }
+        .faq-item a:hover {
+            text-decoration: underline;
+        }
+
+        body {
+            background-color: #4285F4; /* Color de fondo azul de Google */
+            display: flex; /* Usamos flexbox para centrar contenido */
+            justify-content: center; /* Centrado horizontal */
+            align-items: center; /* Centrado vertical */
+            min-height: 100vh; /* Ocupa el 100% del alto de la ventana */
+            margin: 0;
+            color: #ffffff; /* Texto blanco por defecto en el body */
+            font-family: Arial, sans-serif;
+            text-align: center; /* Centra el texto dentro del body */
+        }
+        .contact-container {
+            /* background-color: rgba(133, 219, 34, 0.2);  */
+            background-color: rgba(255, 255, 255, 0.2); /* Fondo ligeramente transparente para contraste */
+            padding: 40px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            max-width: 500px; /* Ancho máximo del contenedor de contacto */
+            width: 90%; /* Ancho responsivo */
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        a {
+            color: #ffffff; /* Color de enlace blanco */
+            text-decoration: none; /* Sin subrayado por defecto */
+            font-weight: bold;
+            transition: color 0.3s ease-in-out; /* Transición suave al pasar el ratón */
+        }
+        a:hover {
+            color: #e0e0e0; /* Color de enlace un poco más claro al pasar el ratón */
+            text-decoration: underline; /* Subrayado al pasar el ratón */
+        }
+        .email-icon {
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f8f9fa; /* Un color de fondo suave */
+        }
+        .error-container {
+            text-align: center;
+            padding: 2rem;
+            border-radius: .5rem;
+            background-color: #fff;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        }
+        .error-code {
+            font-size: 8rem;
+            font-weight: bold;
+            color: #dc3545; /* Rojo de Bootstrap para error */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #ffffff; /* ¡Cambio aquí! Texto blanco para el body */
+            margin: 0;
+            padding-top: 70px; /* Ajuste para el navbar fijo, similar a tu página de contacto */
+            background-color: #4285F4; /* ¡Cambio aquí! Fondo azul */
+            display: flex; /* Para centrar el contenido principal */
+            flex-direction: column; /* Para que el navbar y el contenedor se apilen */
+            min-height: 100vh; /* Asegura que el fondo azul ocupe toda la altura */
+        }
+        .policy-container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #fff; /* El fondo del contenedor sigue siendo blanco */
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            color: #333; /* ¡Cambio aquí! Aseguramos que el texto dentro del contenedor sea oscuro */
+            flex-grow: 1; /* Permite que el contenedor crezca y ocupe el espacio disponible */
+        }
+        h1 {
+            font-size: 2.2em;
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 15px;
+        }
+        h2 {
+            font-size: 1.8em;
+            color: #34495e;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        h3 {
+            font-size: 1.4em;
+            color: #4CAF50; /* Un color de acento para sub-secciones */
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+        ol {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+        ul li, ol li {
+            margin-bottom: 8px;
+        }
+        strong {
+            color: #000;
+        }
+        .important-note {
+            background-color: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 15px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            color: #664d03;
+        }
+        .contact-info ul {
+            list-style-type: none;
+            margin-left: 0;
+            padding-left: 0;
+        }
+        .contact-info ul li {
+            margin-bottom: 10px;
+        }
+        /* Ajuste para los enlaces dentro del contenido principal para que no sean blancos sobre blanco */
+        .policy-container a {
+            color: #007bff; /* Color azul estándar de Bootstrap para enlaces */
+        }
+        .policy-container a:hover {
+            color: #0056b3; /* Un azul más oscuro al pasar el ratón */
+        }
