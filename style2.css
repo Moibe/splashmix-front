@@ -1,9 +1,14 @@
 body {
-            font-family: Arial, sans-serif;
+    display: flex;        
+    font-family: Arial, sans-serif;
             line-height: 1.6;
             color: #333;
-            background-color: #f8f8f8;
-            padding-top: 50px; /* Espacio para el navbar fijo si lo tienes */
+            background-color: #4285F4; /* #f8f8f8; */
+            padding-top: 50px;
+            flex-direction: column; 
+            text-align: center; 
+            justify-content: center; 
+            align-items: center;              
         }
         .faq-header {
             background-color: #4285F4; /* Azul de Google */
@@ -73,26 +78,26 @@ body {
             text-decoration: underline;
         }
 
-        body {
-            background-color: #4285F4; /* Color de fondo azul de Google */
-            display: flex; /* Usamos flexbox para centrar contenido */
-            justify-content: center; /* Centrado horizontal */
-            align-items: center; /* Centrado vertical */
-            min-height: 100vh; /* Ocupa el 100% del alto de la ventana */
+        /* body {
+            background-color: #4285F4; 
+            display: flex; 
+            
+            min-height: 100vh; 
             margin: 0;
-            color: #ffffff; /* Texto blanco por defecto en el body */
+            color: #ffffff; 
             font-family: Arial, sans-serif;
-            text-align: center; /* Centra el texto dentro del body */
-        }
+            
+        } */
         .contact-container {
-            /* background-color: rgba(133, 219, 34, 0.2);  */
             background-color: rgba(255, 255, 255, 0.2); /* Fondo ligeramente transparente para contraste */
+            margin-top: 40px;
             padding: 40px 30px;
             border-radius: 10px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
             max-width: 500px; /* Ancho máximo del contenedor de contacto */
-            width: 90%; /* Ancho responsivo */
+            width: 90%; /* Ancho responsivo */            
         }
+
         h1 {
             font-size: 2.5em;
             margin-bottom: 20px;
@@ -116,14 +121,13 @@ body {
             margin-right: 10px;
             vertical-align: middle;
         }
-
-        body {
+        /* body {
             height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #f8f9fa; /* Un color de fondo suave */
-        }
+            background-color: #f8f9fa; 
+        } */
         .error-container {
             text-align: center;
             padding: 2rem;
@@ -137,17 +141,18 @@ body {
             color: #dc3545; /* Rojo de Bootstrap para error */
         }
 
-        body {
+        /* body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            color: #ffffff; /* ¡Cambio aquí! Texto blanco para el body */
+            color: #ffffff; 
             margin: 0;
-            padding-top: 70px; /* Ajuste para el navbar fijo, similar a tu página de contacto */
-            background-color: #4285F4; /* ¡Cambio aquí! Fondo azul */
-            display: flex; /* Para centrar el contenido principal */
-            flex-direction: column; /* Para que el navbar y el contenedor se apilen */
-            min-height: 100vh; /* Asegura que el fondo azul ocupe toda la altura */
-        }
+            padding-top: 70px; 
+            background-color: #4285F4; 
+            display: flex; 
+            
+            min-height: 100vh; 
+        } */
+
         .policy-container {
             max-width: 800px;
             margin: 40px auto;
