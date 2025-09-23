@@ -20,7 +20,7 @@ jobs:
           run: | 
               ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} \
               "cd ${{ secrets.WORK_DIR }} && git checkout ${{ secrets.MAIN_BRANCH }} \
-              && git pull origin dev \
+              && git pull origin main \
               && exit"
                 
         - name: cleanup
