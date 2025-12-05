@@ -3,6 +3,12 @@
     --color2: rgb(255, 0, 231);
     --imagen_original: url("");
     --imagen_creacion: url("");
+    --imagen_print1: url("images/foto1a.jpg");
+    --imagen_print2: url("images/foto1b.jpg");
+    --imagen_print3: url("images/foto31a.jpg");
+    --imagen_print4: url("images/foto31b.jpg");
+    --imagen_print5: url("images/foto25a.jpg");
+    --imagen_print6: url("images/foto25b.jpg");
     --imagen_modelo: url("images/modelo.jpg");
     --imagen_estilo1: url("images/estilo1.jpg");
     --imagen_estilo2: url("images/estilo2.jpg");
@@ -85,6 +91,30 @@ div{
 
 .card.creacion {
   --front: var(--imagen_creacion);
+}
+
+.card.print1 {
+  --front: var(--imagen_print1);
+}
+
+.card.print2 {
+  --front: var(--imagen_print2);
+}
+
+.card.print3 {
+  --front: var(--imagen_print3);
+}
+
+.card.print4 {
+  --front: var(--imagen_print4);
+}
+
+.card.print5 {
+  --front: var(--imagen_print5);
+}
+
+.card.print6 {
+  --front: var(--imagen_print6);
 }
 
 .card.modelo {
