@@ -68,3 +68,22 @@ $cards
   // #Esto da un número entre el 1 y el 29.
   document.documentElement.style.setProperty('--imagen_original', `url('images/foto${numeroImagen}a.jpg')`);
   document.documentElement.style.setProperty('--imagen_creacion', `url('images/foto${numeroImagen}b.jpg')`);
+
+// ====== DETECCIÓN DE gaClient ======
+document.addEventListener('DOMContentLoaded', function() {
+  // Verificar si gaClient existe
+  if (typeof window.gaClient !== 'undefined' && window.gaClient !== null) {
+    console.log('%c✅ gaClient ENCONTRADO', 'color: #4CAF50; font-weight: bold; font-size: 14px;');
+    console.log('gaClient:', window.gaClient);
+  } else {
+    console.warn('%c⚠️ gaClient NO ENCONTRADO', 'color: #FF9800; font-weight: bold; font-size: 14px;');
+    console.log('gaClient no está disponible en window');
+  }
+  
+  // Verificar también google.analytics
+  if (typeof window.ga !== 'undefined' && window.ga !== null) {
+    console.log('%c✅ window.ga ENCONTRADO', 'color: #4CAF50; font-weight: bold; font-size: 14px;');
+  } else {
+    console.warn('%c⚠️ window.ga NO ENCONTRADO', 'color: #FF9800; font-weight: bold; font-size: 14px;');
+  }
+});
