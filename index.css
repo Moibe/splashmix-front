@@ -13,6 +13,8 @@
     --imagen_estilo1: url("images/estilo1.jpg");
     --imagen_estilo2: url("images/estilo2.jpg");
     --imagen_estilo3: url("images/estilo3.jpg");
+    --imagen_juan1: url("images/foto29a.jpg");
+    --imagen_juan2: url("images/foto29b.jpg");
   }
 
 section {
@@ -129,6 +131,14 @@ div{
 }
 .card.estilo3 {
   --front: var(--imagen_estilo3);
+}
+
+.card.juan1 {
+  --front: var(--imagen_juan1);
+}
+
+.card.juan2 {
+  --front: var(--imagen_juan2);
 }
 
 
