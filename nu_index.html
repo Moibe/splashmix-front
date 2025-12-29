@@ -110,15 +110,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         // Array de números de foto disponibles (1 a 31)
         const numerosFoto = Array.from({ length: 31 }, (_, i) => i + 1);
 
-        // Array de imágenes splashmix
-        const imagenesAleatoria = [
-            'images/splashmix-1766988873087.png',
-            'images/splashmix-1766989756879.png',
-            'images/splashmix-1766990548863.png',
-            'images/splashmix-1766990743216.png',
-            'images/splashmix-1766991560645.png',
-            'images/splashmix-1766991764571.png'
-        ];
+        // Array dinámico de imágenes splashmix (se cargará desde JSON)
+        let imagenesAleatoria = [];
+
+        // Cargar las imágenes splashmix desde el archivo JSON
+        async function cargarImagenesSplashmix() {
+            try {
+                const response = await fetch('images.json');
+                const data = await response.json();
+                imagenesAleatoria = data.splashmix || [];
+            } catch (error) {
+                console.error('Error cargando imágenes:', error);
+                // Fallback en caso de error
+                imagenesAleatoria = [
+                    'images/splashmix-1766988873087.png',
+                    'images/splashmix-1766989756879.png',
+                    'images/splashmix-1766990548863.png',
+                    'images/splashmix-1766990743216.png',
+                    'images/splashmix-1766991560645.png',
+                    'images/splashmix-1766991764571.png'
+                ];
+            }
+        }
 
         function obtenerImagenesAleatorias(cantidad = 3) {
             // Baraja el array y toma los primeros N
@@ -185,7 +198,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         }
 
         // Cargar imágenes y tarjetas al iniciar la página
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', async function() {
+            await cargarImagenesSplashmix();
             cambiarTarjetasSlide1();
             cargarImagenesAleatorias();
         });
